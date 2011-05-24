@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A037486D134AC1EC0013E61E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037486C134AC1EC0013E61E /* UIKit.framework */; };
+		A037486F134AC1EC0013E61E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037486E134AC1EC0013E61E /* Foundation.framework */; };
+		A0374871134AC1EC0013E61E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0374870134AC1EC0013E61E /* CoreGraphics.framework */; };
+		A0374877134AC1EC0013E61E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0374875134AC1EC0013E61E /* InfoPlist.strings */; };
+		A037487A134AC1EC0013E61E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0374879134AC1EC0013E61E /* main.m */; };
+		A037487D134AC1EC0013E61E /* Simple_FormAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A037487C134AC1EC0013E61E /* Simple_FormAppDelegate.m */; };
+		A0374880134AC1EC0013E61E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A037487E134AC1EC0013E61E /* MainWindow.xib */; };
+		A0374887134AC1EC0013E61E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037486C134AC1EC0013E61E /* UIKit.framework */; };
+		A0374888134AC1EC0013E61E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A037486E134AC1EC0013E61E /* Foundation.framework */; };
+		A0374889134AC1EC0013E61E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0374870134AC1EC0013E61E /* CoreGraphics.framework */; };
+		A0374891134AC1EC0013E61E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A037488F134AC1EC0013E61E /* InfoPlist.strings */; };
+		A0374894134AC1EC0013E61E /* Simple_FormTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A0374893134AC1EC0013E61E /* Simple_FormTests.h */; };
+		A0374896134AC1EC0013E61E /* Simple_FormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0374895134AC1EC0013E61E /* Simple_FormTests.m */; };
+		A03748A1134AC3570013E61E /* SimpleForm.m in Sources */ = {isa = PBXBuildFile; fileRef = A03748A0134AC3570013E61E /* SimpleForm.m */; };
+		A03748A4134ACC9B0013E61E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03748A2134ACC9B0013E61E /* AddressBook.framework */; };
+		A03748A5134ACC9B0013E61E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03748A3134ACC9B0013E61E /* AddressBookUI.framework */; };
+		A03DFDB3134B58EC00E0DC7A /* SBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DFDB2134B58EC00E0DC7A /* SBTableViewCell.m */; };
+		A03DFDB5134B804A00E0DC7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DFDB4134B804A00E0DC7A /* QuartzCore.framework */; };
+		A0824698134C1DDC003B46E2 /* SBSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0824697134C1DDC003B46E2 /* SBSaveInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A037488A134AC1EC0013E61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A037485F134AC1EC0013E61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0374867134AC1EC0013E61E;
+			remoteInfo = "Simple Form";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0374868134AC1EC0013E61E /* Simple Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A037486C134AC1EC0013E61E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A037486E134AC1EC0013E61E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0374870134AC1EC0013E61E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0374874134AC1EC0013E61E /* Simple Form-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Form-Info.plist"; sourceTree = "<group>"; };
+		A0374876134AC1EC0013E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0374878134AC1EC0013E61E /* Simple Form-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple Form-Prefix.pch"; sourceTree = "<group>"; };
+		A0374879134AC1EC0013E61E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A037487B134AC1EC0013E61E /* Simple_FormAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simple_FormAppDelegate.h; sourceTree = "<group>"; };
+		A037487C134AC1EC0013E61E /* Simple_FormAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_FormAppDelegate.m; sourceTree = "<group>"; };
+		A037487F134AC1EC0013E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A0374886134AC1EC0013E61E /* Simple FormTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple FormTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A037488E134AC1EC0013E61E /* Simple FormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple FormTests-Info.plist"; sourceTree = "<group>"; };
+		A0374890134AC1EC0013E61E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0374892134AC1EC0013E61E /* Simple FormTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple FormTests-Prefix.pch"; sourceTree = "<group>"; };
+		A0374893134AC1EC0013E61E /* Simple_FormTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simple_FormTests.h; sourceTree = "<group>"; };
+		A0374895134AC1EC0013E61E /* Simple_FormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_FormTests.m; sourceTree = "<group>"; };
+		A037489F134AC3570013E61E /* SimpleForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleForm.h; sourceTree = "<group>"; };
+		A03748A0134AC3570013E61E /* SimpleForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleForm.m; sourceTree = "<group>"; };
+		A03748A2134ACC9B0013E61E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A03748A3134ACC9B0013E61E /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A03DFDB1134B58EC00E0DC7A /* SBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SBTableViewCell.h; sourceTree = "<group>"; };
+		A03DFDB2134B58EC00E0DC7A /* SBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTableViewCell.m; sourceTree = "<group>"; };
+		A03DFDB4134B804A00E0DC7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0824696134C1DDB003B46E2 /* SBSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SBSaveInfo.h; sourceTree = "<group>"; };
+		A0824697134C1DDC003B46E2 /* SBSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSaveInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0374865134AC1EC0013E61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DFDB5134B804A00E0DC7A /* QuartzCore.framework in Frameworks */,
+				A03748A4134ACC9B0013E61E /* AddressBook.framework in Frameworks */,
+				A03748A5134ACC9B0013E61E /* AddressBookUI.framework in Frameworks */,
+				A037486D134AC1EC0013E61E /* UIKit.framework in Frameworks */,
+				A037486F134AC1EC0013E61E /* Foundation.framework in Frameworks */,
+				A0374871134AC1EC0013E61E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0374882134AC1EC0013E61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0374887134AC1EC0013E61E /* UIKit.framework in Frameworks */,
+				A0374888134AC1EC0013E61E /* Foundation.framework in Frameworks */,
+				A0374889134AC1EC0013E61E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A037485D134AC1EC0013E61E = {
+			isa = PBXGroup;
+			children = (
+				A0374872134AC1EC0013E61E /* Simple Form */,
+				A037488C134AC1EC0013E61E /* Simple FormTests */,
+				A037486B134AC1EC0013E61E /* Frameworks */,
+				A0374869134AC1EC0013E61E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0374869134AC1EC0013E61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0374868134AC1EC0013E61E /* Simple Form.app */,
+				A0374886134AC1EC0013E61E /* Simple FormTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A037486B134AC1EC0013E61E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A03DFDB4134B804A00E0DC7A /* QuartzCore.framework */,
+				A03748A2134ACC9B0013E61E /* AddressBook.framework */,
+				A03748A3134ACC9B0013E61E /* AddressBookUI.framework */,
+				A037486C134AC1EC0013E61E /* UIKit.framework */,
+				A037486E134AC1EC0013E61E /* Foundation.framework */,
+				A0374870134AC1EC0013E61E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0374872134AC1EC0013E61E /* Simple Form */ = {
+			isa = PBXGroup;
+			children = (
+				A037487B134AC1EC0013E61E /* Simple_FormAppDelegate.h */,
+				A037487C134AC1EC0013E61E /* Simple_FormAppDelegate.m */,
+				A037489F134AC3570013E61E /* SimpleForm.h */,
+				A03748A0134AC3570013E61E /* SimpleForm.m */,
+				A0824696134C1DDB003B46E2 /* SBSaveInfo.h */,
+				A0824697134C1DDC003B46E2 /* SBSaveInfo.m */,
+				A03DFDB1134B58EC00E0DC7A /* SBTableViewCell.h */,
+				A03DFDB2134B58EC00E0DC7A /* SBTableViewCell.m */,
+				A037487E134AC1EC0013E61E /* MainWindow.xib */,
+				A0374873134AC1EC0013E61E /* Supporting Files */,
+			);
+			path = "Simple Form";
+			sourceTree = "<group>";
+		};
+		A0374873134AC1EC0013E61E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0374874134AC1EC0013E61E /* Simple Form-Info.plist */,
+				A0374875134AC1EC0013E61E /* InfoPlist.strings */,
+				A0374878134AC1EC0013E61E /* Simple Form-Prefix.pch */,
+				A0374879134AC1EC0013E61E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A037488C134AC1EC0013E61E /* Simple FormTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0374893134AC1EC0013E61E /* Simple_FormTests.h */,
+				A0374895134AC1EC0013E61E /* Simple_FormTests.m */,
+				A037488D134AC1EC0013E61E /* Supporting Files */,
+			);
+			path = "Simple FormTests";
+			sourceTree = "<group>";
+		};
+		A037488D134AC1EC0013E61E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A037488E134AC1EC0013E61E /* Simple FormTests-Info.plist */,
+				A037488F134AC1EC0013E61E /* InfoPlist.strings */,
+				A0374892134AC1EC0013E61E /* Simple FormTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0374867134AC1EC0013E61E /* Simple Form */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0374899134AC1EC0013E61E /* Build configuration list for PBXNativeTarget "Simple Form" */;
+			buildPhases = (
+				A0374864134AC1EC0013E61E /* Sources */,
+				A0374865134AC1EC0013E61E /* Frameworks */,
+				A0374866134AC1EC0013E61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Form";
+			productName = "Simple Form";
+			productReference = A0374868134AC1EC0013E61E /* Simple Form.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0374885134AC1EC0013E61E /* Simple FormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A037489C134AC1EC0013E61E /* Build configuration list for PBXNativeTarget "Simple FormTests" */;
+			buildPhases = (
+				A0374881134AC1EC0013E61E /* Sources */,
+				A0374882134AC1EC0013E61E /* Frameworks */,
+				A0374883134AC1EC0013E61E /* Resources */,
+				A0374884134AC1EC0013E61E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A037488B134AC1EC0013E61E /* PBXTargetDependency */,
+			);
+			name = "Simple FormTests";
+			productName = "Simple FormTests";
+			productReference = A0374886134AC1EC0013E61E /* Simple FormTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A037485F134AC1EC0013E61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Sergiobuj;
+			};
+			buildConfigurationList = A0374862134AC1EC0013E61E /* Build configuration list for PBXProject "Simple Form" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A037485D134AC1EC0013E61E;
+			productRefGroup = A0374869134AC1EC0013E61E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0374867134AC1EC0013E61E /* Simple Form */,
+				A0374885134AC1EC0013E61E /* Simple FormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0374866134AC1EC0013E61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0374877134AC1EC0013E61E /* InfoPlist.strings in Resources */,
+				A0374880134AC1EC0013E61E /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0374883134AC1EC0013E61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0374891134AC1EC0013E61E /* InfoPlist.strings in Resources */,
+				A0374894134AC1EC0013E61E /* Simple_FormTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0374884134AC1EC0013E61E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0374864134AC1EC0013E61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A037487A134AC1EC0013E61E /* main.m in Sources */,
+				A037487D134AC1EC0013E61E /* Simple_FormAppDelegate.m in Sources */,
+				A03748A1134AC3570013E61E /* SimpleForm.m in Sources */,
+				A03DFDB3134B58EC00E0DC7A /* SBTableViewCell.m in Sources */,
+				A0824698134C1DDC003B46E2 /* SBSaveInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0374881134AC1EC0013E61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0374896134AC1EC0013E61E /* Simple_FormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A037488B134AC1EC0013E61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0374867134AC1EC0013E61E /* Simple Form */;
+			targetProxy = A037488A134AC1EC0013E61E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0374875134AC1EC0013E61E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0374876134AC1EC0013E61E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A037487E134AC1EC0013E61E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A037487F134AC1EC0013E61E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A037488F134AC1EC0013E61E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0374890134AC1EC0013E61E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0374897134AC1EC0013E61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0374898134AC1EC0013E61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A037489A134AC1EC0013E61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Form/Simple Form-Prefix.pch";
+				INFOPLIST_FILE = "Simple Form/Simple Form-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A037489B134AC1EC0013E61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Form/Simple Form-Prefix.pch";
+				INFOPLIST_FILE = "Simple Form/Simple Form-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A037489D134AC1EC0013E61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simple Form.app/Simple Form";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple FormTests/Simple FormTests-Prefix.pch";
+				INFOPLIST_FILE = "Simple FormTests/Simple FormTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A037489E134AC1EC0013E61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simple Form.app/Simple Form";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple FormTests/Simple FormTests-Prefix.pch";
+				INFOPLIST_FILE = "Simple FormTests/Simple FormTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0374862134AC1EC0013E61E /* Build configuration list for PBXProject "Simple Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0374897134AC1EC0013E61E /* Debug */,
+				A0374898134AC1EC0013E61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0374899134AC1EC0013E61E /* Build configuration list for PBXNativeTarget "Simple Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A037489A134AC1EC0013E61E /* Debug */,
+				A037489B134AC1EC0013E61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A037489C134AC1EC0013E61E /* Build configuration list for PBXNativeTarget "Simple FormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A037489D134AC1EC0013E61E /* Debug */,
+				A037489E134AC1EC0013E61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A037485F134AC1EC0013E61E /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Simple FormTests' target in the 'Simple FormTests' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+#endif
