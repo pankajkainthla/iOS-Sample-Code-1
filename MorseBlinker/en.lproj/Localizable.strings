@@ -1,0 +1,18 @@
+/*
+genstrings -o ../es.lproj *.m
+*/
+
+/* text on the button for action */
+"button_text" = "button text";
+
+/* claclalca genstrings -o ../es.lproj *.m*/
+"ack" = "OK";
+
+/* Info before the text field (label) */
+"info_label_text" = "Blink it!!";
+
+"alert_title" = "Alert";
+
+"alert_msg" = "Number of characters exceeded.\nMax is";
+
+"done_label_text" = "(Tap to exit)";

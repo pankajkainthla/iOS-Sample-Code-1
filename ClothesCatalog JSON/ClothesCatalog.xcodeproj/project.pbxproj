@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
+		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
+		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
+		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		A07B9D1912A9B2AA00D79C03 /* CommonChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9D1812A9B2AA00D79C03 /* CommonChooser.m */; };
+		A07B9DB112A9BD8400D79C03 /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DAE12A9BD8400D79C03 /* CellView.m */; };
+		A07B9DB212A9BD8400D79C03 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DB012A9BD8400D79C03 /* GridViewController.m */; };
+		A07B9DE212A9BE3100D79C03 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DCC12A9BE3100D79C03 /* AQGridView.m */; };
+		A07B9DE312A9BE3100D79C03 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DD012A9BE3100D79C03 /* AQGridViewAnimatorItem.m */; };
+		A07B9DE412A9BE3100D79C03 /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DD212A9BE3100D79C03 /* AQGridViewCell.m */; };
+		A07B9DE512A9BE3100D79C03 /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DD512A9BE3100D79C03 /* AQGridViewController.m */; };
+		A07B9DE612A9BE3100D79C03 /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DD712A9BE3100D79C03 /* AQGridViewData.m */; };
+		A07B9DE712A9BE3100D79C03 /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DD912A9BE3100D79C03 /* AQGridViewUpdateInfo.m */; };
+		A07B9DE812A9BE3100D79C03 /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DDB12A9BE3100D79C03 /* AQGridViewUpdateItem.m */; };
+		A07B9DE912A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DDD12A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		A07B9DEA12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DDF12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.m */; };
+		A07B9DEB12A9BE3100D79C03 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9DE112A9BE3100D79C03 /* UIColor+AQGridView.m */; };
+		A07B9DF512A9BE5000D79C03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07B9DF412A9BE5000D79C03 /* QuartzCore.framework */; };
+		A07B9E4812A9C38A00D79C03 /* GetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B9E4712A9C38A00D79C03 /* GetImage.m */; };
+		A07BA08E12AA0B4600D79C03 /* iconm.png in Resources */ = {isa = PBXBuildFile; fileRef = A07BA08D12AA0B4600D79C03 /* iconm.png */; };
+		A07BA0A912AA0C5700D79C03 /* iconf.png in Resources */ = {isa = PBXBuildFile; fileRef = A07BA0A812AA0C5700D79C03 /* iconf.png */; };
+		A07BA0AE12AA0CE300D79C03 /* ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = A07BA0AD12AA0CE300D79C03 /* ModalView.m */; };
+		A07BA0E612AA100700D79C03 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = A07BA0E512AA100700D79C03 /* app.png */; };
+		A0889D3312AF3D26008474FB /* PlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A0889D3212AF3D26008474FB /* PlistReader.m */; };
+		A0889D3512AF3D4C008474FB /* xml_resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0889D3412AF3D4C008474FB /* xml_resources.plist */; };
+		A0ADA20812B72E94002EE609 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA1F612B72E94002EE609 /* CDataScanner.m */; };
+		A0ADA20912B72E94002EE609 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA1F912B72E94002EE609 /* CDataScanner_Extensions.m */; };
+		A0ADA20A12B72E94002EE609 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA1FB12B72E94002EE609 /* NSCharacterSet_Extensions.m */; };
+		A0ADA20B12B72E94002EE609 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA1FD12B72E94002EE609 /* NSDictionary_JSONExtensions.m */; };
+		A0ADA20C12B72E94002EE609 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA1FF12B72E94002EE609 /* NSScanner_Extensions.m */; };
+		A0ADA20D12B72E94002EE609 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA20212B72E94002EE609 /* CJSONDeserializer.m */; };
+		A0ADA20E12B72E94002EE609 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA20412B72E94002EE609 /* CJSONScanner.m */; };
+		A0ADA20F12B72E94002EE609 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0ADA20612B72E94002EE609 /* CJSONSerializer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* CR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
+		2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
+		2860E327111B887F00E27156 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
+		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
+		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ClothesCatalog_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothesCatalog_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ClothesCatalog-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClothesCatalog-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A07B9D1712A9B2AA00D79C03 /* CommonChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonChooser.h; sourceTree = "<group>"; };
+		A07B9D1812A9B2AA00D79C03 /* CommonChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonChooser.m; sourceTree = "<group>"; };
+		A07B9DAD12A9BD8400D79C03 /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		A07B9DAE12A9BD8400D79C03 /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
+		A07B9DAF12A9BD8400D79C03 /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		A07B9DB012A9BD8400D79C03 /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		A07B9DCB12A9BE3100D79C03 /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		A07B9DCC12A9BE3100D79C03 /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		A07B9DCD12A9BE3100D79C03 /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		A07B9DCE12A9BE3100D79C03 /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		A07B9DCF12A9BE3100D79C03 /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		A07B9DD012A9BE3100D79C03 /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		A07B9DD112A9BE3100D79C03 /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		A07B9DD212A9BE3100D79C03 /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		A07B9DD312A9BE3100D79C03 /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		A07B9DD412A9BE3100D79C03 /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		A07B9DD512A9BE3100D79C03 /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		A07B9DD612A9BE3100D79C03 /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		A07B9DD712A9BE3100D79C03 /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		A07B9DD812A9BE3100D79C03 /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		A07B9DD912A9BE3100D79C03 /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		A07B9DDA12A9BE3100D79C03 /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		A07B9DDB12A9BE3100D79C03 /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		A07B9DDC12A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		A07B9DDD12A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		A07B9DDE12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		A07B9DDF12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		A07B9DE012A9BE3100D79C03 /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		A07B9DE112A9BE3100D79C03 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		A07B9DF412A9BE5000D79C03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A07B9E4612A9C38A00D79C03 /* GetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImage.h; sourceTree = "<group>"; };
+		A07B9E4712A9C38A00D79C03 /* GetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImage.m; sourceTree = "<group>"; };
+		A07BA08D12AA0B4600D79C03 /* iconm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconm.png; sourceTree = "<group>"; };
+		A07BA0A812AA0C5700D79C03 /* iconf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconf.png; sourceTree = "<group>"; };
+		A07BA0AC12AA0CE300D79C03 /* ModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalView.h; sourceTree = "<group>"; };
+		A07BA0AD12AA0CE300D79C03 /* ModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalView.m; sourceTree = "<group>"; };
+		A07BA0E512AA100700D79C03 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
+		A0889D3112AF3D26008474FB /* PlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistReader.h; sourceTree = "<group>"; };
+		A0889D3212AF3D26008474FB /* PlistReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistReader.m; sourceTree = "<group>"; };
+		A0889D3412AF3D4C008474FB /* xml_resources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xml_resources.plist; sourceTree = "<group>"; };
+		A0ADA1F512B72E94002EE609 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		A0ADA1F612B72E94002EE609 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		A0ADA1F812B72E94002EE609 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = Extensions/CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		A0ADA1F912B72E94002EE609 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = Extensions/CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		A0ADA1FA12B72E94002EE609 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSCharacterSet_Extensions.h; path = Extensions/NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		A0ADA1FB12B72E94002EE609 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSCharacterSet_Extensions.m; path = Extensions/NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		A0ADA1FC12B72E94002EE609 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = Extensions/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		A0ADA1FD12B72E94002EE609 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		A0ADA1FE12B72E94002EE609 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSScanner_Extensions.h; path = Extensions/NSScanner_Extensions.h; sourceTree = "<group>"; };
+		A0ADA1FF12B72E94002EE609 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSScanner_Extensions.m; path = Extensions/NSScanner_Extensions.m; sourceTree = "<group>"; };
+		A0ADA20112B72E94002EE609 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = JSON/CJSONDeserializer.h; sourceTree = "<group>"; };
+		A0ADA20212B72E94002EE609 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = JSON/CJSONDeserializer.m; sourceTree = "<group>"; };
+		A0ADA20312B72E94002EE609 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = JSON/CJSONScanner.h; sourceTree = "<group>"; };
+		A0ADA20412B72E94002EE609 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = JSON/CJSONScanner.m; sourceTree = "<group>"; };
+		A0ADA20512B72E94002EE609 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = JSON/CJSONSerializer.h; sourceTree = "<group>"; };
+		A0ADA20612B72E94002EE609 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = JSON/CJSONSerializer.m; sourceTree = "<group>"; };
+		A0ADA20712B72E94002EE609 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = JSON/JSONRepresentation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				A07B9DF512A9BE5000D79C03 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2860E324111B887F00E27156 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
+				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
+				A07B9D1712A9B2AA00D79C03 /* CommonChooser.h */,
+				A07B9D1812A9B2AA00D79C03 /* CommonChooser.m */,
+				A07B9DAF12A9BD8400D79C03 /* GridViewController.h */,
+				A07B9DB012A9BD8400D79C03 /* GridViewController.m */,
+				A07BA0AC12AA0CE300D79C03 /* ModalView.h */,
+				A07BA0AD12AA0CE300D79C03 /* ModalView.m */,
+				A07B9DAD12A9BD8400D79C03 /* CellView.h */,
+				A07B9DAE12A9BD8400D79C03 /* CellView.m */,
+				A07B9E4612A9C38A00D79C03 /* GetImage.h */,
+				A07B9E4712A9C38A00D79C03 /* GetImage.m */,
+				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		2860E32A111B888700E27156 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
+				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
+				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		28EEBF621118D79A00187D67 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0889D3112AF3D26008474FB /* PlistReader.h */,
+				A0889D3212AF3D26008474FB /* PlistReader.m */,
+				8D1107310486CEB800E47090 /* ClothesCatalog-Info.plist */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2860E32A111B888700E27156 /* iPad */,
+				2860E324111B887F00E27156 /* iPhone */,
+				28EEBF621118D79A00187D67 /* Shared */,
+				A0ADA1DA12B72E4F002EE609 /* AQGridView */,
+				A0ADA21012B72E9E002EE609 /* TouchJSON */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				A07BA0E512AA100700D79C03 /* app.png */,
+				A07BA08D12AA0B4600D79C03 /* iconm.png */,
+				A07BA0A812AA0C5700D79C03 /* iconf.png */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ClothesCatalog_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				A0889D3412AF3D4C008474FB /* xml_resources.plist */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				A07B9DF412A9BE5000D79C03 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0ADA1DA12B72E4F002EE609 /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				A07B9DCB12A9BE3100D79C03 /* AQGridView.h */,
+				A07B9DCC12A9BE3100D79C03 /* AQGridView.m */,
+				A07B9DCD12A9BE3100D79C03 /* AQGridView+CellLayout.h */,
+				A07B9DCE12A9BE3100D79C03 /* AQGridView+CellLocationDelegation.h */,
+				A07B9DCF12A9BE3100D79C03 /* AQGridViewAnimatorItem.h */,
+				A07B9DD012A9BE3100D79C03 /* AQGridViewAnimatorItem.m */,
+				A07B9DD112A9BE3100D79C03 /* AQGridViewCell.h */,
+				A07B9DD212A9BE3100D79C03 /* AQGridViewCell.m */,
+				A07B9DD312A9BE3100D79C03 /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				A07B9DD412A9BE3100D79C03 /* AQGridViewController.h */,
+				A07B9DD512A9BE3100D79C03 /* AQGridViewController.m */,
+				A07B9DD612A9BE3100D79C03 /* AQGridViewData.h */,
+				A07B9DD712A9BE3100D79C03 /* AQGridViewData.m */,
+				A07B9DD812A9BE3100D79C03 /* AQGridViewUpdateInfo.h */,
+				A07B9DD912A9BE3100D79C03 /* AQGridViewUpdateInfo.m */,
+				A07B9DDA12A9BE3100D79C03 /* AQGridViewUpdateItem.h */,
+				A07B9DDB12A9BE3100D79C03 /* AQGridViewUpdateItem.m */,
+				A07B9DDC12A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.h */,
+				A07B9DDD12A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.m */,
+				A07B9DDE12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.h */,
+				A07B9DDF12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.m */,
+				A07B9DE012A9BE3100D79C03 /* UIColor+AQGridView.h */,
+				A07B9DE112A9BE3100D79C03 /* UIColor+AQGridView.m */,
+			);
+			name = AQGridView;
+			sourceTree = "<group>";
+		};
+		A0ADA1F712B72E94002EE609 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0ADA20012B72E94002EE609 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A0ADA21012B72E9E002EE609 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A0ADA1F512B72E94002EE609 /* CDataScanner.h */,
+				A0ADA1F612B72E94002EE609 /* CDataScanner.m */,
+				A0ADA1F712B72E94002EE609 /* Extensions */,
+				A0ADA1F812B72E94002EE609 /* CDataScanner_Extensions.h */,
+				A0ADA1F912B72E94002EE609 /* CDataScanner_Extensions.m */,
+				A0ADA1FA12B72E94002EE609 /* NSCharacterSet_Extensions.h */,
+				A0ADA1FB12B72E94002EE609 /* NSCharacterSet_Extensions.m */,
+				A0ADA1FC12B72E94002EE609 /* NSDictionary_JSONExtensions.h */,
+				A0ADA1FD12B72E94002EE609 /* NSDictionary_JSONExtensions.m */,
+				A0ADA1FE12B72E94002EE609 /* NSScanner_Extensions.h */,
+				A0ADA1FF12B72E94002EE609 /* NSScanner_Extensions.m */,
+				A0ADA20012B72E94002EE609 /* JSON */,
+				A0ADA20112B72E94002EE609 /* CJSONDeserializer.h */,
+				A0ADA20212B72E94002EE609 /* CJSONDeserializer.m */,
+				A0ADA20312B72E94002EE609 /* CJSONScanner.h */,
+				A0ADA20412B72E94002EE609 /* CJSONScanner.m */,
+				A0ADA20512B72E94002EE609 /* CJSONSerializer.h */,
+				A0ADA20612B72E94002EE609 /* CJSONSerializer.m */,
+				A0ADA20712B72E94002EE609 /* JSONRepresentation.h */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ClothesCatalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ClothesCatalog" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClothesCatalog;
+			productName = ClothesCatalog;
+			productReference = 1D6058910D05DD3D006BFB54 /* CR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ClothesCatalog" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ClothesCatalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
+				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
+				A07BA08E12AA0B4600D79C03 /* iconm.png in Resources */,
+				A07BA0A912AA0C5700D79C03 /* iconf.png in Resources */,
+				A07BA0E612AA100700D79C03 /* app.png in Resources */,
+				A0889D3512AF3D4C008474FB /* xml_resources.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
+				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
+				A07B9D1912A9B2AA00D79C03 /* CommonChooser.m in Sources */,
+				A07B9DB112A9BD8400D79C03 /* CellView.m in Sources */,
+				A07B9DB212A9BD8400D79C03 /* GridViewController.m in Sources */,
+				A07B9DE212A9BE3100D79C03 /* AQGridView.m in Sources */,
+				A07B9DE312A9BE3100D79C03 /* AQGridViewAnimatorItem.m in Sources */,
+				A07B9DE412A9BE3100D79C03 /* AQGridViewCell.m in Sources */,
+				A07B9DE512A9BE3100D79C03 /* AQGridViewController.m in Sources */,
+				A07B9DE612A9BE3100D79C03 /* AQGridViewData.m in Sources */,
+				A07B9DE712A9BE3100D79C03 /* AQGridViewUpdateInfo.m in Sources */,
+				A07B9DE812A9BE3100D79C03 /* AQGridViewUpdateItem.m in Sources */,
+				A07B9DE912A9BE3100D79C03 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				A07B9DEA12A9BE3100D79C03 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				A07B9DEB12A9BE3100D79C03 /* UIColor+AQGridView.m in Sources */,
+				A07B9E4812A9C38A00D79C03 /* GetImage.m in Sources */,
+				A07BA0AE12AA0CE300D79C03 /* ModalView.m in Sources */,
+				A0889D3312AF3D26008474FB /* PlistReader.m in Sources */,
+				A0ADA20812B72E94002EE609 /* CDataScanner.m in Sources */,
+				A0ADA20912B72E94002EE609 /* CDataScanner_Extensions.m in Sources */,
+				A0ADA20A12B72E94002EE609 /* NSCharacterSet_Extensions.m in Sources */,
+				A0ADA20B12B72E94002EE609 /* NSDictionary_JSONExtensions.m in Sources */,
+				A0ADA20C12B72E94002EE609 /* NSScanner_Extensions.m in Sources */,
+				A0ADA20D12B72E94002EE609 /* CJSONDeserializer.m in Sources */,
+				A0ADA20E12B72E94002EE609 /* CJSONScanner.m in Sources */,
+				A0ADA20F12B72E94002EE609 /* CJSONSerializer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ClothesCatalog_Prefix.pch;
+				INFOPLIST_FILE = "ClothesCatalog-Info.plist";
+				PRODUCT_NAME = CR;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ClothesCatalog_Prefix.pch;
+				INFOPLIST_FILE = "ClothesCatalog-Info.plist";
+				PRODUCT_NAME = CR;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ClothesCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ClothesCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
