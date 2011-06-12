@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		A06F5F311001706000CF95D7 /* GetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F1D1001706000CF95D7 /* GetImage.m */; };
+		A06F5F321001706000CF95D7 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F201001706000CF95D7 /* NSObject+SBJSON.m */; };
+		A06F5F331001706000CF95D7 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F221001706000CF95D7 /* NSString+SBJSON.m */; };
+		A06F5F341001706000CF95D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F241001706000CF95D7 /* Person.m */; };
+		A06F5F351001706000CF95D7 /* PresenceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F261001706000CF95D7 /* PresenceAppDelegate.m */; };
+		A06F5F361001706000CF95D7 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F281001706000CF95D7 /* SBJSON.m */; };
+		A06F5F371001706000CF95D7 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F2A1001706000CF95D7 /* Status.m */; };
+		A06F5F381001706000CF95D7 /* StatusComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F2C1001706000CF95D7 /* StatusComposeViewController.m */; };
+		A06F5F391001706000CF95D7 /* theTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A06F5F2E1001706000CF95D7 /* theTableView.m */; };
+		A06F5F401001708600CF95D7 /* UserUnknownIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A06F5F3F1001708600CF95D7 /* UserUnknownIcon.jpg */; };
+		A06F5F431001708E00CF95D7 /* TwitterUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06F5F411001708E00CF95D7 /* TwitterUsers.plist */; };
+		A06F5F441001708E00CF95D7 /* TwitterU.plist in Resources */ = {isa = PBXBuildFile; fileRef = A06F5F421001708E00CF95D7 /* TwitterU.plist */; };
+		A09252D81001919500C73FFE /* TwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A09252D71001919500C73FFE /* TwitterHelper.m */; };
+		A09252DD100191A600C73FFE /* all.png in Resources */ = {isa = PBXBuildFile; fileRef = A09252D9100191A600C73FFE /* all.png */; };
+		A09252DE100191A600C73FFE /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = A09252DA100191A600C73FFE /* search.png */; };
+		A09252DF100191A600C73FFE /* faves.png in Resources */ = {isa = PBXBuildFile; fileRef = A09252DB100191A600C73FFE /* faves.png */; };
+		A09252E0100191A600C73FFE /* presence-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A09252DC100191A600C73FFE /* presence-icon.png */; };
+		A096F8781003E99E0045C65F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A096F8771003E99E0045C65F /* AddressBook.framework */; };
+		A096F87A1003E99E0045C65F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A096F8791003E99E0045C65F /* AddressBookUI.framework */; };
+		A0A26DC71002EBA3004AFFF4 /* SearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A26DC61002EBA3004AFFF4 /* SearchTableView.m */; };
+		A0CEBE231007BBC500EFB248 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A0CEBE221007BBC500EFB248 /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Presence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Presence_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presence_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Presence-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Presence-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A06F5F1C1001706000CF95D7 /* GetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetImage.h; path = ../GetImage.h; sourceTree = "<group>"; };
+		A06F5F1D1001706000CF95D7 /* GetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetImage.m; path = ../GetImage.m; sourceTree = "<group>"; };
+		A06F5F1E1001706000CF95D7 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		A06F5F1F1001706000CF95D7 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		A06F5F201001706000CF95D7 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		A06F5F211001706000CF95D7 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		A06F5F221001706000CF95D7 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		A06F5F231001706000CF95D7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		A06F5F241001706000CF95D7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		A06F5F251001706000CF95D7 /* PresenceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenceAppDelegate.h; path = ../PresenceAppDelegate.h; sourceTree = "<group>"; };
+		A06F5F261001706000CF95D7 /* PresenceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresenceAppDelegate.m; path = ../PresenceAppDelegate.m; sourceTree = "<group>"; };
+		A06F5F271001706000CF95D7 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		A06F5F281001706000CF95D7 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		A06F5F291001706000CF95D7 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Status.h; path = ../Status.h; sourceTree = "<group>"; };
+		A06F5F2A1001706000CF95D7 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Status.m; path = ../Status.m; sourceTree = "<group>"; };
+		A06F5F2B1001706000CF95D7 /* StatusComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusComposeViewController.h; path = ../StatusComposeViewController.h; sourceTree = "<group>"; };
+		A06F5F2C1001706000CF95D7 /* StatusComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusComposeViewController.m; path = ../StatusComposeViewController.m; sourceTree = "<group>"; };
+		A06F5F2D1001706000CF95D7 /* theTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = theTableView.h; path = ../theTableView.h; sourceTree = "<group>"; };
+		A06F5F2E1001706000CF95D7 /* theTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = theTableView.m; path = ../theTableView.m; sourceTree = "<group>"; };
+		A06F5F3F1001708600CF95D7 /* UserUnknownIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserUnknownIcon.jpg; sourceTree = "<group>"; };
+		A06F5F411001708E00CF95D7 /* TwitterUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TwitterUsers.plist; sourceTree = "<group>"; };
+		A06F5F421001708E00CF95D7 /* TwitterU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TwitterU.plist; sourceTree = "<group>"; };
+		A09252D61001919500C73FFE /* TwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterHelper.h; sourceTree = "<group>"; };
+		A09252D71001919500C73FFE /* TwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHelper.m; sourceTree = "<group>"; };
+		A09252D9100191A600C73FFE /* all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all.png; sourceTree = "<group>"; };
+		A09252DA100191A600C73FFE /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		A09252DB100191A600C73FFE /* faves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faves.png; sourceTree = "<group>"; };
+		A09252DC100191A600C73FFE /* presence-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "presence-icon.png"; sourceTree = "<group>"; };
+		A096F8771003E99E0045C65F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A096F8791003E99E0045C65F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A0A26DC51002EBA3004AFFF4 /* SearchTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableView.h; sourceTree = "<group>"; };
+		A0A26DC61002EBA3004AFFF4 /* SearchTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableView.m; sourceTree = "<group>"; };
+		A0CEBE221007BBC500EFB248 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				A096F8781003E99E0045C65F /* AddressBook.framework in Frameworks */,
+				A096F87A1003E99E0045C65F /* AddressBookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A06F5F251001706000CF95D7 /* PresenceAppDelegate.h */,
+				A06F5F261001706000CF95D7 /* PresenceAppDelegate.m */,
+				A06F5F2D1001706000CF95D7 /* theTableView.h */,
+				A06F5F2E1001706000CF95D7 /* theTableView.m */,
+				A0A26DC51002EBA3004AFFF4 /* SearchTableView.h */,
+				A0A26DC61002EBA3004AFFF4 /* SearchTableView.m */,
+				A06F5F291001706000CF95D7 /* Status.h */,
+				A06F5F2A1001706000CF95D7 /* Status.m */,
+				A06F5F2B1001706000CF95D7 /* StatusComposeViewController.h */,
+				A06F5F2C1001706000CF95D7 /* StatusComposeViewController.m */,
+				A09252D61001919500C73FFE /* TwitterHelper.h */,
+				A09252D71001919500C73FFE /* TwitterHelper.m */,
+				A06F5F1C1001706000CF95D7 /* GetImage.h */,
+				A06F5F1D1001706000CF95D7 /* GetImage.m */,
+				A06F5F231001706000CF95D7 /* Person.h */,
+				A06F5F241001706000CF95D7 /* Person.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Presence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				A0CEBE221007BBC500EFB248 /* Settings.bundle */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A06F5F1E1001706000CF95D7 /* JSON.h */,
+				A06F5F1F1001706000CF95D7 /* NSObject+SBJSON.h */,
+				A06F5F201001706000CF95D7 /* NSObject+SBJSON.m */,
+				A06F5F211001706000CF95D7 /* NSString+SBJSON.h */,
+				A06F5F221001706000CF95D7 /* NSString+SBJSON.m */,
+				A06F5F271001706000CF95D7 /* SBJSON.h */,
+				A06F5F281001706000CF95D7 /* SBJSON.m */,
+				32CA4F630368D1EE00C91783 /* Presence_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A09252D9100191A600C73FFE /* all.png */,
+				A09252DA100191A600C73FFE /* search.png */,
+				A09252DB100191A600C73FFE /* faves.png */,
+				A09252DC100191A600C73FFE /* presence-icon.png */,
+				A06F5F3F1001708600CF95D7 /* UserUnknownIcon.jpg */,
+				A06F5F411001708E00CF95D7 /* TwitterUsers.plist */,
+				A06F5F421001708E00CF95D7 /* TwitterU.plist */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Presence-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A096F8771003E99E0045C65F /* AddressBook.framework */,
+				A096F8791003E99E0045C65F /* AddressBookUI.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Presence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Presence" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presence;
+			productName = Presence;
+			productReference = 1D6058910D05DD3D006BFB54 /* Presence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Presence" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Presence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				A06F5F401001708600CF95D7 /* UserUnknownIcon.jpg in Resources */,
+				A06F5F431001708E00CF95D7 /* TwitterUsers.plist in Resources */,
+				A06F5F441001708E00CF95D7 /* TwitterU.plist in Resources */,
+				A09252DD100191A600C73FFE /* all.png in Resources */,
+				A09252DE100191A600C73FFE /* search.png in Resources */,
+				A09252DF100191A600C73FFE /* faves.png in Resources */,
+				A09252E0100191A600C73FFE /* presence-icon.png in Resources */,
+				A0CEBE231007BBC500EFB248 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				A06F5F311001706000CF95D7 /* GetImage.m in Sources */,
+				A06F5F321001706000CF95D7 /* NSObject+SBJSON.m in Sources */,
+				A06F5F331001706000CF95D7 /* NSString+SBJSON.m in Sources */,
+				A06F5F341001706000CF95D7 /* Person.m in Sources */,
+				A06F5F351001706000CF95D7 /* PresenceAppDelegate.m in Sources */,
+				A06F5F361001706000CF95D7 /* SBJSON.m in Sources */,
+				A06F5F371001706000CF95D7 /* Status.m in Sources */,
+				A06F5F381001706000CF95D7 /* StatusComposeViewController.m in Sources */,
+				A06F5F391001706000CF95D7 /* theTableView.m in Sources */,
+				A09252D81001919500C73FFE /* TwitterHelper.m in Sources */,
+				A0A26DC71002EBA3004AFFF4 /* SearchTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Presence_Prefix.pch;
+				INFOPLIST_FILE = "Presence-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = Presence;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Presence_Prefix.pch;
+				INFOPLIST_FILE = "Presence-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = Presence;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Presence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Presence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
