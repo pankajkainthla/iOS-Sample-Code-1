@@ -43,7 +43,7 @@
 - (void) duckUpAs:(SBTType) type {
 	bonusPoints = 3;
 	[self setIsUp:YES];
-	
+	[self setDuckType:type];
 	if( type == SBTTyellowDuck)
 		[self setBackgroundColor:[UIColor yellowColor]];
 	else if( type == SBTTblueDuck)
