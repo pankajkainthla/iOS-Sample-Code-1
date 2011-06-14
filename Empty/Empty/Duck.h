@@ -9,22 +9,41 @@
 #import <UIKit/UIKit.h>
 #import "SBCommitPointsProtocol.h"
 
+
+enum {
+	SBTTblueDuck = 0,
+	SBTTyellowDuck,
+	SBTTgoose
+};
+
+typedef NSInteger SBTType;
+
 @interface Duck : UIView 
 {
+	SBTType duckType;
+	
 	int bonusPoints;
-	BOOL isDuck;
+	
+	BOOL isUp;
+	
 	CGPoint position;
-	NSTimer * popUpTimer;
+	
 	NSTimer * bonusTimer;
+	
 	id <SBCommitPointsProtocol> delegate;
 }
 
-@property (nonatomic) BOOL isDuck;
+@property (nonatomic) SBTType duckType;
+@property (nonatomic) BOOL isUp;
 @property (nonatomic) CGPoint position;
-@property (nonatomic, retain) NSTimer * popUpTimer;
+
 @property (nonatomic, retain) NSTimer * bonusTimer;
+
 @property (nonatomic, assign) id <SBCommitPointsProtocol> delegate;
 
--(id) initWithPosition:(CGPoint) pos;
+
+-(id) initWithPosition:(CGPoint) pos andTargetType:(SBTType) type;
+-(void) duckDown;
+-(void) duckUpAs:(SBTType)type;
 
 @end

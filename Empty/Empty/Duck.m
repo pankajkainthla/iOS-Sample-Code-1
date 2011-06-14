@@ -8,85 +8,82 @@
 
 #import "Duck.h"
 
-#define DuckPercentage 90
-
 @interface Duck (hidden)
--(void) duckDown;
--(void) duckUp;
 -(void) bonusCount;
 @end
 
 @implementation Duck
 
-@synthesize isDuck, position, popUpTimer, bonusTimer;
+@synthesize duckType, position, bonusTimer, isUp;
 @synthesize delegate = _delegate;
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-
-		[self setPosition:CGPointMake(frame.origin.x, frame.origin.y)];
-		isDuck = (rand() % 100 > DuckPercentage)? NO : YES;
-		if (isDuck) {
-			[self setBackgroundColor:[UIColor yellowColor]];
-		}else{
-			[self setBackgroundColor:[UIColor redColor]];
-		}
-		[self duckDown];
-		[self.popUpTimer invalidate];
-		[self setPopUpTimer:[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(duckUp) userInfo:nil repeats:NO]];
+    id me = [super initWithFrame:frame];
+    if (me) {
+		[me setPosition:CGPointMake(frame.origin.x, frame.origin.y)];
 	}
-    return self;
+    return me;
 }
 
-- (id)initWithPosition:(CGPoint) pos 
+-(id) initWithPosition:(CGPoint) pos andTargetType:(SBTType) type;
 {
-	//	NSLog(@"pato pos");
-	return [self initWithFrame:CGRectMake(pos.x, pos.y, 0, 50)];
+	self = [self initWithFrame:CGRectMake(pos.x, pos.y, 50, 50)];
+	
+	if( type == SBTTyellowDuck)
+		[self setBackgroundColor:[UIColor yellowColor]];
+	else if( type == SBTTblueDuck)
+		[self setBackgroundColor:[UIColor blueColor]];
+	
+	[self setIsUp:YES];
+	
+	return self;
 }
 
-- (void) duckUp {
-	bonusPoints = 2;
-	[[self popUpTimer] invalidate];
-	isDuck = (rand() % 100 > DuckPercentage)? NO : YES;
-	if (isDuck) {
+- (void) duckUpAs:(SBTType) type {
+	bonusPoints = 3;
+	[self setIsUp:YES];
+	
+	if( type == SBTTyellowDuck)
 		[self setBackgroundColor:[UIColor yellowColor]];
-	}else{
+	else if( type == SBTTblueDuck)
+		[self setBackgroundColor:[UIColor blueColor]];
+	else
 		[self setBackgroundColor:[UIColor redColor]];
-	}
 	
 	[UIView beginAnimations:@"duckup" context:nil];
 	[UIView setAnimationDuration:0.1];
 	[self setFrame:CGRectMake([self position].x, [self position].y, 50, 50)];
 	[UIView commitAnimations];
 	[self setBonusTimer:[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(bonusCount) userInfo:nil repeats:YES]];
-	[self setPopUpTimer:[NSTimer scheduledTimerWithTimeInterval:((rand() % 10)+ 0.5) target:self selector:@selector(duckDown) userInfo:nil repeats:NO]];
 }
 
 - (void) duckDown {
-	[[self popUpTimer] invalidate];
+	[self setIsUp:NO];
 	[UIView beginAnimations:@"duckdn" context:nil];
 	[UIView setAnimationDuration:0.1];
 	[self setFrame:CGRectMake([self position].x, [self position].y, 0, 50)];
 	[UIView commitAnimations];
-	[self setPopUpTimer:[NSTimer scheduledTimerWithTimeInterval:((rand() % 10)+ 0.5) target:self selector:@selector(duckUp) userInfo:nil repeats:NO]];
 	
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 
-	if (isDuck) {
-		if (bonusPoints > 0) {
-			[self.delegate commitHitPoints:(20+30)];
-		}else{
-			[self.delegate commitHitPoints:20];
-		}
-	}else{
-		[self.delegate commitHitPoints:-60];
+	int shootPoints = 0;
+	switch (duckType) {
+		case SBTTyellowDuck:
+			shootPoints = (bonusPoints > 0)? 12 : 10;
+			break;
+		case SBTTblueDuck:
+			shootPoints = (bonusPoints > 0)? 14 : 10 ;
+			break;
+		case SBTTgoose:
+			shootPoints = -20;
+			break;
+		default:
+			break;
 	}
-
+	[self.delegate commitHitPoints:shootPoints];
 	[self duckDown];	
 }
 
@@ -94,15 +91,5 @@
 	bonusPoints--;
 	if(bonusPoints == 0) [self.bonusTimer invalidate];
 }
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

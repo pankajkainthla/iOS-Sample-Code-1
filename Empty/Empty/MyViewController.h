@@ -13,8 +13,14 @@
 {
 	UILabel * scoreBoard;
 	int pointCount;
+	NSMutableArray * duckPond;
+	NSTimer * swapCheck;
+	NSTimer * gameTimer;
 }
+
 @property (nonatomic, retain) UILabel * scoreBoard;
+@property (nonatomic, retain) NSTimer * swapCheck;
+@property (nonatomic, retain) NSTimer * gameTimer;
 
 @end
 
