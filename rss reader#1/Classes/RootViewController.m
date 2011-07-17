@@ -96,10 +96,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
 
     // Configure the cell.
+	cell.imageView.image = [UIImage imageNamed:@"icon.png"];
+	[cell.detailTextLabel setText: @"Proyecto 50 EAFIT"];
+	
 	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
 	[cell.textLabel setText:[[stories objectAtIndex:storyIndex] objectForKey:@"title"]];
 	
@@ -211,6 +214,7 @@
 	NSLog(@"error parsing XML: %@", errorString);
 	UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Error loading content" message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[errorAlert show];
+	[errorAlert release];
 }
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
 	//

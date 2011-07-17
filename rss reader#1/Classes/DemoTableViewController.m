@@ -33,8 +33,7 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-
-    cell.textLabel.text = [items objectAtIndex:indexPath.row];
+	cell.textLabel.text = [items objectAtIndex:indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
     return cell;

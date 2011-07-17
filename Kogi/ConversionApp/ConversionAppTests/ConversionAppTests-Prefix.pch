@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ConversionAppTests' target in the 'ConversionAppTests' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+#endif
