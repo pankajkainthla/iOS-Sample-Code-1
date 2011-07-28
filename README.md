@@ -9,4 +9,4 @@
 * ClothesCatalog JSON - Loads a clothes catalog. (The resources provider might stop the service anytime), makes use of things like AQGridView, CJSON, and NSOperationQueues
 * Presence - Spring 2009 Stanford iPhone Developing final project
 * Empty - Simple views animation. Duck Shoot like game.
-* Kogi folder
+* Kogi folder with warming up projects
