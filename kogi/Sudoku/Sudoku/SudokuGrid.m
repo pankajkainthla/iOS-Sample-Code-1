@@ -8,17 +8,8 @@
 
 #import "SudokuGrid.h"
 
-struct SBSudokuGrid {
-	int i;
-	int j;
-};
-typedef struct SBSudokuGrid SBSudokuGrid;
-
 @interface SudokuGrid ()
 - (SBSudokuGrid) gridPositionFromPoint:(CGPoint) point;
-
-@property (nonatomic) SBSudokuGrid highlightedCell;
-
 @end
 
 @implementation SudokuGrid
@@ -36,10 +27,18 @@ typedef struct SBSudokuGrid SBSudokuGrid;
 		vSpace = currentBounds.size.height/9.0;
 		hSpace = currentBounds.size.width/9.0;
 		spacing = 0;
+	
+		numbersDrawn = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
 
+- (void) dealloc {
+	
+	[numbersDrawn release];
+	
+	[super dealloc];
+}
 
 - (void) drawSudokuGrid:(CGContextRef) context {
 
@@ -73,7 +72,6 @@ typedef struct SBSudokuGrid SBSudokuGrid;
 
 }
 
-
 - (void)drawRect:(CGRect)rect
 {
 	CGContextRef context = UIGraphicsGetCurrentContext();
@@ -86,13 +84,24 @@ typedef struct SBSudokuGrid SBSudokuGrid;
 	if (highlightedCell.i != -1 && highlightedCell.j != -1) {
 		
 		CGRect cell = CGRectMake( hSpace * highlightedCell.j, vSpace * highlightedCell.i, hSpace, vSpace);
-		CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
+		CGContextSetFillColorWithColor(context, [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0].CGColor);
 		CGContextFillRect(context , cell);
 	}
 	
-
+	
+	for (SudokuNumber * numToDraw in [numbersDrawn allValues] ) {
+		CGContextSetRGBFillColor(context, 0.0, 0.0, 0.0, 1.0);
+		NSString * numberAsString = [numToDraw.numberValue stringValue];
+		
+		//CGRect cell = CGRectMake( hSpace * highlightedCell.j, vSpace * highlightedCell.i, hSpace, vSpace);
+		//[numberAsString drawInRect:cell withFont:[UIFont systemFontOfSize:30.0]];
+		int padding = 5;
+		SBSudokuGrid position = numToDraw.gridPosition;
+		CGPoint drawingPoint = CGPointMake( hSpace * position.j + padding, vSpace * position.i);
+		[numberAsString drawAtPoint:drawingPoint withFont:[UIFont systemFontOfSize:35.0]];
+	}
+	
 }
-
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint touchPoint;
@@ -109,7 +118,6 @@ typedef struct SBSudokuGrid SBSudokuGrid;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{}
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{}
 
-
 - (SBSudokuGrid) gridPositionFromPoint:(CGPoint) point {
 
 	SBSudokuGrid gridPos = { 0 , 0};
@@ -118,6 +126,16 @@ typedef struct SBSudokuGrid SBSudokuGrid;
 	gridPos.j = (int) (point.x / hSpace);
 
 	return gridPos;
+}
+
+- (void) drawNumber:(int) number {
+	
+	SudokuNumber * newNum = [[SudokuNumber alloc] initWithNumber:[NSNumber numberWithInt:number] andPosition:highlightedCell];
+	
+	[numbersDrawn setObject:newNum forKey:[NSString stringWithFormat:@"%d%d", highlightedCell.i, highlightedCell.j]];
+	[newNum release];
+	
+	[self setNeedsDisplay];
 }
 
 @end

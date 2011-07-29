@@ -8,6 +8,8 @@
 
 #import "SudokuTests.h"
 
+#import "SudokuMan.h"
+
 @implementation SudokuTests
 
 - (void)setUp
@@ -26,7 +28,10 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SudokuTests");
+	
+	SudokuMan * sudokuMan = [[SudokuMan alloc]init];
+
+	[sudokuMan release];
 }
 
 @end

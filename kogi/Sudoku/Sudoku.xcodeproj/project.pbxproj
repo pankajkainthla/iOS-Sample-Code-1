@@ -10,6 +10,8 @@
 		A005790E13E11D560054A409 /* SudokuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A005790D13E11D560054A409 /* SudokuViewController.xib */; };
 		A00C3E3B13DF791000C80520 /* SudokuGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = A00C3E3A13DF791000C80520 /* SudokuGrid.m */; };
 		A00C3E3D13DF793200C80520 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00C3E3C13DF793200C80520 /* QuartzCore.framework */; };
+		A021B6D313E1A5C2002AFB86 /* SudokuMan.m in Sources */ = {isa = PBXBuildFile; fileRef = A021B6D213E1A5C2002AFB86 /* SudokuMan.m */; };
+		A021B6D713E1FE35002AFB86 /* SudokuNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A021B6D613E1FE35002AFB86 /* SudokuNumber.m */; };
 		A0CEBAB713DF6DBB004D5F48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CEBAB613DF6DBB004D5F48 /* UIKit.framework */; };
 		A0CEBAB913DF6DBB004D5F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CEBAB813DF6DBB004D5F48 /* Foundation.framework */; };
 		A0CEBABB13DF6DBB004D5F48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CEBABA13DF6DBB004D5F48 /* CoreGraphics.framework */; };
@@ -46,6 +48,10 @@
 		A00C3E3913DF791000C80520 /* SudokuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuGrid.h; sourceTree = "<group>"; };
 		A00C3E3A13DF791000C80520 /* SudokuGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuGrid.m; sourceTree = "<group>"; };
 		A00C3E3C13DF793200C80520 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A021B6D113E1A5C2002AFB86 /* SudokuMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuMan.h; sourceTree = "<group>"; };
+		A021B6D213E1A5C2002AFB86 /* SudokuMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuMan.m; sourceTree = "<group>"; };
+		A021B6D513E1FE35002AFB86 /* SudokuNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuNumber.h; sourceTree = "<group>"; };
+		A021B6D613E1FE35002AFB86 /* SudokuNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuNumber.m; sourceTree = "<group>"; };
 		A0CEBAB213DF6DBB004D5F48 /* Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CEBAB613DF6DBB004D5F48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0CEBAB813DF6DBB004D5F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,15 +141,19 @@
 			children = (
 				A0CEBAC513DF6DBB004D5F48 /* SudokuAppDelegate.h */,
 				A0CEBAC613DF6DBB004D5F48 /* SudokuAppDelegate.m */,
-				A0CEBAC813DF6DBB004D5F48 /* MainWindow.xib */,
-				A0CEBAF613DF6F53004D5F48 /* SudokuViewController.h */,
-				A0CEBAF713DF6F53004D5F48 /* SudokuViewController.m */,
 				A00C3E3913DF791000C80520 /* SudokuGrid.h */,
 				A00C3E3A13DF791000C80520 /* SudokuGrid.m */,
+				A021B6D113E1A5C2002AFB86 /* SudokuMan.h */,
+				A021B6D213E1A5C2002AFB86 /* SudokuMan.m */,
+				A021B6D513E1FE35002AFB86 /* SudokuNumber.h */,
+				A021B6D613E1FE35002AFB86 /* SudokuNumber.m */,
+				A0CEBAF613DF6F53004D5F48 /* SudokuViewController.h */,
+				A0CEBAF713DF6F53004D5F48 /* SudokuViewController.m */,
 				A0CEBACB13DF6DBB004D5F48 /* FirstViewController.h */,
 				A0CEBACC13DF6DBB004D5F48 /* FirstViewController.m */,
 				A0CEBACE13DF6DBB004D5F48 /* SecondViewController.h */,
 				A0CEBACF13DF6DBB004D5F48 /* SecondViewController.m */,
+				A0CEBAC813DF6DBB004D5F48 /* MainWindow.xib */,
 				A005790D13E11D560054A409 /* SudokuViewController.xib */,
 				A0CEBAD113DF6DBB004D5F48 /* FirstView.xib */,
 				A0CEBAD413DF6DBC004D5F48 /* SecondView.xib */,
@@ -298,6 +308,8 @@
 				A0CEBAD013DF6DBB004D5F48 /* SecondViewController.m in Sources */,
 				A0CEBAF813DF6F53004D5F48 /* SudokuViewController.m in Sources */,
 				A00C3E3B13DF791000C80520 /* SudokuGrid.m in Sources */,
+				A021B6D313E1A5C2002AFB86 /* SudokuMan.m in Sources */,
+				A021B6D713E1FE35002AFB86 /* SudokuNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SudokuNumber.h"
 
 @interface SudokuGrid : UIView 
 {
@@ -15,6 +16,14 @@
 	CGFloat spacing;
 	
 	CGRect currentBounds;
+	
+	NSMutableDictionary * numbersDrawn;
+	
 }
+
+- (void) drawNumber:(int) number;
+
+@property (nonatomic) SBSudokuGrid highlightedCell;
+
 
 @end
