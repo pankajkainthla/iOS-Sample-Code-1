@@ -41,6 +41,7 @@
 	
 	navcont = [[UINavigationController alloc] initWithRootViewController:cvc];
 	[navcont.view addSubview:toolbar];
+	
 	[self.window addSubview:navcont.view];
 	
 	[self.window makeKeyAndVisible];
