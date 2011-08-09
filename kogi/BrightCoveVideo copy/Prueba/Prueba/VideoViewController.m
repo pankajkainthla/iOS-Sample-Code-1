@@ -8,6 +8,10 @@
 
 #import "VideoViewController.h"
 
+#warning Remove BCTokens import and define 'BCTestToken' or 'BCToken'
+#import "BCTokens.h"
+
+
 @implementation VideoViewController
 
 @synthesize videoID, adVideoPlayer, video, firstUp;
@@ -40,8 +44,10 @@
 		//self.videoID = 1083677626001;
 		
 	}
-	BCMediaAPI *bc = [[BCMediaAPI alloc] initWithReadToken:@"G2wZOZkxp7WqyEaU8tHGWDjYk3wHnoia7-qzIW6PmKzCoRrMoEdVYg.."];
-    [bc setMediaDeliveryType:BCMediaDeliveryTypeHTTP];
+
+	BCMediaAPI * bc = [[BCMediaAPI alloc] initWithReadToken:BCTestToken];
+    
+	[bc setMediaDeliveryType:BCMediaDeliveryTypeHTTP];
 	
 	NSError *err = nil;
     video = [bc findVideoById:self.videoID error: &err];
@@ -55,11 +61,9 @@
 	adVideoPlayer.myViewController = self; 
 	adVideoPlayer.frame = portraitScreen;
 	[self.view addSubview:adVideoPlayer];
-	//	[ad showVideo:[NSString stringWithFormat:@"%@",video.FLVURL] andID:self.videoID];
 	[adVideoPlayer showVideo:video.FLVURL andID:self.videoID];
 	
 	[bc release];
-
 	
 	viewOverTouchEvent = [[KGAuditudeView alloc] initWithFrame:self.view.frame];
 	[self.view addSubview:viewOverTouchEvent];

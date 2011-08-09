@@ -7,7 +7,9 @@
 
 #import "AdVideoPlayerView.h"
 
-#import "VideoViewController.h"
+#define AuditudeZoneID 51301
+
+//#import "VideoViewController.h"
 
 @interface AdVideoPlayerView()
 
@@ -91,7 +93,7 @@
 	//[self.auditudeView requestAdsForVideo:@"asset1" 
 	//								   zoneId:9797 domain:@"auditude.com" targetingParams:cp];
 	
-	[self.auditudeView requestAdsForVideo:[NSString stringWithFormat:@"%llu", videoID] zoneId:51301 domain:@"auditude.com" targetingParams:cp];	
+	[self.auditudeView requestAdsForVideo:[NSString stringWithFormat:@"%llu", videoID] zoneId:AuditudeZoneID domain:@"auditude.com" targetingParams:cp];	
 }
 
 -(void)startMainVideo
@@ -173,7 +175,7 @@
 {
 	[remainig setText:[NSString stringWithFormat:@"Remaining time %d seconds...",  (int)(totalTime - currentPlaybackTime)]];
 	[remainig sizeToFit];
-	NSLog(@"AdEvent: linear ad progress: %f", totalTime - currentPlaybackTime);
+	///NSLog(@"AdEvent: linear ad progress: %f", totalTime - currentPlaybackTime);
 }
 
 - (void)auditudeBreakEnd:(NSDictionary *)data;
